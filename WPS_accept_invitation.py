@@ -47,7 +47,7 @@ if SERVER_KEY:
         'text':'WPS邀请好友任务：成功邀请到%d位好友'%(mk),
         'desp':'成功邀请%d位好友'%(mk)
     }
-    requests.post('https://sc.ftqq.com/%s.send'%(SERVER_KEY.strip()), data = data)
+    requests.post('https://sctapi.ftqq.com/%s.send'%(SERVER_KEY.strip()), data = data)
 
 BARK_URL = os.getenv('BARK_URL')
 if BARK_URL:
